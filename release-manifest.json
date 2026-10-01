@@ -2,15 +2,15 @@
   "localBuild": {
     "softwareVersion": "3.4.0",
     "dataVersion": 33,
-    "status": "ready-to-publish",
+    "status": "published",
     "artifact": "MMO_Mapping_V3.4.0_独立演示.html",
     "pagesEntry": "index.html",
     "publicURL": "https://jasmineyao1112.github.io/mmo-mapping/",
     "sourceRepo": "https://github.com/jasmineyao1112/mmo-mapping",
-    "publishedAt": null,
+    "publishedAt": "2026-10-01",
     "domainTests": 218,
     "browserResults": "tests/v32-browser-results.json",
-    "note": "本地构建已就绪，等待推送到 GitHub 公开仓库并开启 Pages；下方顶层发布及哈希字段保留为历史 V3.0 公网交付记录。"
+    "note": "V3.4.0 通过 GitHub Pages（main / root）公开发布，无需登录或 VPN；下方顶层发布及哈希字段保留为历史 V3.0 公网交付记录。"
   },
   "softwareVersion": "3.0.0",
   "dataVersion": 30,
