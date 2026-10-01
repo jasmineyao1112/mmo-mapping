@@ -1,0 +1,209 @@
+✖ 字段主张可定位原文，未附完整记录背书 (14.348292ms)
+✖ 头衔来源隔离只去掉头衔，不删战斗经历 (2.440208ms)
+✖ 仅头衔来源不能支持战斗能力、2021开始或6人管理 (4.081833ms)
+✖ 推定结束年不作为精确截止；2024仅时间待核验候选 (8.948917ms)
+✖ 仅关键词句子无来源元数据不得确认关系 (1.144667ms)
+✔ 完整来源但只是汇报方案仍不能确认 (0.96175ms)
+✖ 演示批准关系保留来源元数据与独立性，不升级交叉验证 (0.413625ms)
+✖ 关系重复来源复用，暂缓拒绝留痕不删岗位 (0.386375ms)
+✖ 三个模拟样本只返回草案，第三条身份不可强行合并 (0.299875ms)
+✖ 未知及提示注入文本不套答案，原库不变 (0.878625ms)
+✖ 新版迁移只读预览，不丢日志且补字段证据 (3.456042ms)
+✖ 非法字段主张引用、引文、值被导入校验拒绝 (0.247791ms)
+✖ 撤销、恢复、重复发布保持字段与任职一致 (1.7925ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 1
+ℹ fail 12
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 118.830958
+
+✖ failing tests:
+
+test at tests/v3.test.cjs:4:1
+✖ 字段主张可定位原文，未附完整记录背书 (14.348292ms)
+  TypeError: Cannot read properties of undefined (reading 'length')
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:4:78)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at tests/v3.test.cjs:5:1
+✖ 头衔来源隔离只去掉头衔，不删战斗经历 (2.440208ms)
+  TypeError: M.setSourceStatus is not a function
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:5:132)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at tests/v3.test.cjs:6:1
+✖ 仅头衔来源不能支持战斗能力、2021开始或6人管理 (4.081833ms)
+  TypeError: M.fieldClaims is not a function
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:6:326)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests/v3.test.cjs:7:1
+✖ 推定结束年不作为精确截止；2024仅时间待核验候选 (8.948917ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    a.ok(r)
+  
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:7:163)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/v3.test.cjs:8:1
+✖ 仅关键词句子无来源元数据不得确认关系 (1.144667ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:8:71)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /来源|元数据/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/v3.test.cjs:10:1
+✖ 演示批准关系保留来源元数据与独立性，不升级交叉验证 (0.413625ms)
+  Error: 确认须补充明确的关系原句，写明双方、直接汇报或合作；已有模糊线索不足以转实线。
+      at Object.reviewRelation (/Users/yjt/Documents/outputs/mmo-mapping/dist/model.js:118:50)
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:10:59)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests/v3.test.cjs:11:1
+✖ 关系重复来源复用，暂缓拒绝留痕不删岗位 (0.386375ms)
+  Error: 确认须补充明确的关系原句，写明双方、直接汇报或合作；已有模糊线索不足以转实线。
+      at Object.reviewRelation (/Users/yjt/Documents/outputs/mmo-mapping/dist/model.js:118:50)
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:11:53)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests/v3.test.cjs:12:1
+✖ 三个模拟样本只返回草案，第三条身份不可强行合并 (0.299875ms)
+  TypeError: Cannot read properties of undefined (reading 'map')
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:12:79)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests/v3.test.cjs:13:1
+✖ 未知及提示注入文本不套答案，原库不变 (0.878625ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /预设|不支持/. Input:
+  
+  'TypeError: M.extractIntelligence is not a function'
+  
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:13:71)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: TypeError: M.extractIntelligence is not a function
+        at /Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:13:84
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:13:71)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1402:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+        at Test.postRun (node:internal/test_runner/test:1542:19)
+        at Test.run (node:internal/test_runner/test:1467:12)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:974:7),
+    expected: /预设|不支持/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/v3.test.cjs:14:1
+✖ 新版迁移只读预览，不丢日志且补字段证据 (3.456042ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:14:203)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/v3.test.cjs:15:1
+✖ 非法字段主张引用、引文、值被导入校验拒绝 (0.247791ms)
+  TypeError: Cannot read properties of undefined (reading '0')
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:15:74)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tests/v3.test.cjs:16:1
+✖ 撤销、恢复、重复发布保持字段与任职一致 (1.7925ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (/Users/yjt/Documents/outputs/mmo-mapping/tests/v3.test.cjs:16:69)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /已处理/,
+    operator: 'throws',
+    diff: 'simple'
+  }

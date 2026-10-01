@@ -1,0 +1,45 @@
+✔ 项目能力必须同段：玄霄战斗不含顾航 (10.692083ms)
+✔ 矛盾公司与项目必须零结果 (0.783959ms)
+✔ 合法跨经历组合及证据路径 (6.496084ms)
+✔ 能力撤销只影响自己的匹配链 (1.201208ms)
+✔ 发布日期不晚于观察日；未来发布事务回滚 (1.067875ms)
+✔ 未来采集与非法日期导入拒绝 (1.355583ms)
+✔ 历史初始化不是17条新动向；补录不计新发生事件 (0.89425ms)
+✔ 事件年份精度不伪装近30天日期 (0.209625ms)
+✔ 三项目动态对照及阶段边界 (0.502625ms)
+✔ 旧V2加载只提示迁移；原始字节不被更改 (3.83175ms)
+✔ 旧未来来源保留原文但不参与有效事实 (1.208625ms)
+✔ 连续发布撤销恢复关联完整；非法恢复不污染 (7.290833ms)
+✖ 只筛主策时项目必须约束主策任职 (1.721625ms)
+✔ 组长查询按任期限定且路径包含头衔原文 (2.470667ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 13
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 149.05775
+
+✖ failing tests:
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:16:1
+✖ 只筛主策时项目必须约束主策任职 (1.721625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:16:30)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

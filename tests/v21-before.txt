@@ -1,0 +1,183 @@
+✖ 项目能力必须同段：玄霄战斗不含顾航 (11.449667ms)
+✖ 矛盾公司与项目必须零结果 (0.651125ms)
+✖ 合法跨经历组合及证据路径 (3.42475ms)
+✔ 能力撤销只影响自己的匹配链 (1.651166ms)
+✖ 发布日期不晚于观察日；未来发布事务回滚 (6.350333ms)
+✖ 未来采集与非法日期导入拒绝 (1.279042ms)
+✖ 历史初始化不是17条新动向；补录不计新发生事件 (0.166625ms)
+✖ 事件年份精度不伪装近30天日期 (0.1565ms)
+✖ 三项目动态对照及阶段边界 (0.159167ms)
+✖ 旧V2加载只提示迁移；原始字节不被更改 (4.136083ms)
+✖ 旧未来来源保留原文但不参与有效事实 (0.771333ms)
+✔ 连续发布撤销恢复关联完整；非法恢复不污染 (3.19375ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 2
+ℹ fail 10
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 135.832459
+
+✖ failing tests:
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:4:1
+✖ 项目能力必须同段：玄霄战斗不含顾航 (11.449667ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      '周岚',
+  +   '顾航'
+    ]
+  
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:4:32)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ '周岚', '顾航' ],
+    expected: [ '周岚' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:5:1
+✖ 矛盾公司与项目必须零结果 (0.651125ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:5:27)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:6:1
+✖ 合法跨经历组合及证据路径 (3.42475ms)
+  TypeError: M.queryMatches is not a function
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:6:119)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:8:1
+✖ 发布日期不晚于观察日；未来发布事务回滚 (6.350333ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    a.ok(M.extract(M.SUPPLEMENT,db).published<=db.observationDate)
+  
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:8:53)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:9:1
+✖ 未来采集与非法日期导入拒绝 (1.279042ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:9:85)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /日期|未来/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:10:1
+✖ 历史初始化不是17条新动向；补录不计新发生事件 (0.166625ms)
+  TypeError: M.activityMetrics is not a function
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:10:63)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:11:1
+✖ 事件年份精度不伪装近30天日期 (0.1565ms)
+  TypeError: M.activityMetrics is not a function
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:11:142)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:12:1
+✖ 三项目动态对照及阶段边界 (0.159167ms)
+  TypeError: M.comparisonYears is not a function
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:12:58)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:13:1
+✖ 旧V2加载只提示迁移；原始字节不被更改 (4.136083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - true
+  
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:13:175)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at outputs/mmo-mapping/tests/v21.test.cjs:14:1
+✖ 旧未来来源保留原文但不参与有效事实 (0.771333ms)
+  TypeError: M.migrateDatabase is not a function
+      at TestContext.<anonymous> (/Users/yjt/Documents/Codex/2026-09-22/files-mentioned-by-the-user-mmo/outputs/mmo-mapping/tests/v21.test.cjs:14:145)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

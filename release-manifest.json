@@ -1,0 +1,77 @@
+{
+  "localBuild": {
+    "softwareVersion": "3.4.0",
+    "dataVersion": 33,
+    "status": "ready-to-publish",
+    "artifact": "MMO_Mapping_V3.4.0_独立演示.html",
+    "pagesEntry": "index.html",
+    "publicURL": "https://jasmineyao1112.github.io/mmo-mapping/",
+    "sourceRepo": "https://github.com/jasmineyao1112/mmo-mapping",
+    "publishedAt": null,
+    "domainTests": 218,
+    "browserResults": "tests/v32-browser-results.json",
+    "note": "本地构建已就绪，等待推送到 GitHub 公开仓库并开启 Pages；下方顶层发布及哈希字段保留为历史 V3.0 公网交付记录。"
+  },
+  "softwareVersion": "3.0.0",
+  "dataVersion": 30,
+  "observationDate": "2026-09-22",
+  "publicURL": "https://mmo-mapping-workbench.jasmineyao25.chatgpt.site",
+  "publicAccess": "no login",
+  "deploymentStatus": "succeeded",
+  "siteSavedVersion": 2,
+  "sourceCommit": "209311176ba2cc8e83785b7c36bcff1749c8b462",
+  "currentDomainTests": 60,
+  "legacyRegressionTests": 70,
+  "browserResults": [
+    {
+      "mode": "online",
+      "version": "3.0.0",
+      "coreFlowRuns": 2,
+      "status": "passed",
+      "people": 8,
+      "jobs": 12,
+      "fieldClaims": 97,
+      "consoleErrors": [],
+      "externalRequests": 0,
+      "testedURL": "https://mmo-mapping-workbench.jasmineyao25.chatgpt.site"
+    },
+    {
+      "mode": "offline",
+      "version": "3.0.0",
+      "coreFlowRuns": 2,
+      "status": "passed",
+      "people": 8,
+      "jobs": 12,
+      "fieldClaims": 97,
+      "consoleErrors": [],
+      "externalRequests": 0,
+      "testedURL": "file://MMO_Mapping_V3.0.0_独立演示.html"
+    },
+    {
+      "mode": "offline-no-storage",
+      "version": "3.0.0",
+      "coreFlowRuns": 2,
+      "status": "passed",
+      "people": 8,
+      "jobs": 12,
+      "fieldClaims": 97,
+      "consoleErrors": [],
+      "externalRequests": 0,
+      "testedURL": "file://MMO_Mapping_V3.0.0_独立演示.html"
+    }
+  ],
+  "sha256": {
+    "dist/PROMPT.md": "8fef05739f4e9aa8b7a39059e41a3a47e35e6b4deb9898e98853c808e2d96938",
+    "dist/README.md": "b6b963fde88f8c1abf0aa64bf1194db4c31870041056bc79378a5cc4ed7ff3c0",
+    "dist/app.js": "b8eb113eab3c025e436b0035143342e2813a46ed60d8b7fe33a99da180de7ef3",
+    "dist/claims.js": "4997bdb5b6ddb56ec3bca7c361ebbf990301428c019cce4340945d732f58ace9",
+    "dist/extraction.js": "07db880dcb0cc242ce68a97801890dec6993e6f0539b17a4a9de5868a2e425a1",
+    "dist/help.js": "b6c459bcee44b352555fad4785b832adaa1ec37a536fb12624e8efba4486aa43",
+    "dist/index.html": "896bd5c93f0b0cac3e9c3266f041904737a0b997f40a6d17c54c46847265bdae",
+    "dist/model.js": "fd51c7475215742ea11708e49e0d3bdb46599cb0f3237eecd1112753abdbe37d",
+    "dist/style.css": "8bc32e1bf509ab18e0b743360b07aa20a8775e9c1c9f170a00ef47fbcb5d32ee",
+    "dist/submission.js": "938832211fb67c094713d96e76dca60210d3b3628140b6a508afe7de16d13fe8",
+    "MMO_Mapping_V3.0.0_独立演示.html": "c34a89b47638de83312f0986ecb82a10b41239196cd54a45ae58628136af72d9",
+    "MMO_Mapping_V3.0.0_公开部署产物.tar.gz": "449caec6f11e361736b14740b981490005107c8b9e8adb31c3b30cee5092d3e1"
+  }
+}

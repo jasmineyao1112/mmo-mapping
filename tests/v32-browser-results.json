@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "mode": "online",
+      "status": "passed",
+      "version": 3,
+      "deliveries": 2,
+      "feedback": 1,
+      "allPeopleExplained": 26,
+      "consoleErrors": [],
+      "externalRequests": 0,
+      "mobileWidth": 390
+    },
+    {
+      "mode": "offline",
+      "status": "passed",
+      "version": 3,
+      "deliveries": 2,
+      "feedback": 1,
+      "allPeopleExplained": 26,
+      "consoleErrors": [],
+      "externalRequests": 0,
+      "mobileWidth": 390
+    },
+    {
+      "mode": "offline-no-storage",
+      "status": "passed",
+      "version": 3,
+      "deliveries": 2,
+      "feedback": 1,
+      "allPeopleExplained": 26,
+      "consoleErrors": [],
+      "externalRequests": 0,
+      "mobileWidth": 390
+    }
+  ],
+  "migration": "passed",
+  "staleTabProtection": "passed",
+  "failedImportAtomicity": "passed"
+}

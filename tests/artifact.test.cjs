@@ -1,0 +1,10 @@
+const fs=require('node:fs'),vm=require('node:vm'),a=require('node:assert/strict'),path=require('node:path');
+const root=path.join(__dirname,'..'),html=fs.readFileSync(path.join(root,'MMO_Mapping_V3.4.0_独立演示.html'),'utf8');
+a.ok(!/<script[^>]+src=|<link[^>]+href="(?:https?:|style.css)/.test(html));
+const scripts=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]),files=['model.js','claims.js','extraction.js','insight.js','requirements.js','org.js','help.js','submission.js','insight-views.js','requirements-views.js','org-views.js','app.js'];a.equal(scripts.length,files.length);
+files.forEach((f,i)=>{a.equal(scripts[i],fs.readFileSync(path.join(root,'dist',f),'utf8').replaceAll('</script','<\\/script'));new vm.Script(scripts[i]);});
+a.ok(!/sk-proj-|sk-[A-Za-z0-9]{20,}|OPENAI_API_KEY\s*[:=]/.test(html));
+a.equal(html.match(/<style>([\s\S]*?)<\/style>/)[1],fs.readFileSync(path.join(root,'dist/style.css'),'utf8'));
+const docs={prompt:fs.readFileSync(path.join(root,'dist/PROMPT.md'),'utf8'),guide:fs.readFileSync(path.join(root,'dist/README.md'),'utf8')};
+const context={window:{}};vm.runInNewContext(scripts[files.indexOf('submission.js')],context);a.equal(JSON.stringify(context.window.submissionDocs),JSON.stringify(docs));
+console.log('PASS 独立 HTML '+files.length+' 个内嵌脚本、CSS、内嵌说明与源码一致，语法通过，无外部脚本/CSS及API凭证。');

@@ -1,0 +1,38 @@
+[
+  {
+    "mode": "online",
+    "version": "3.0.0",
+    "coreFlowRuns": 2,
+    "status": "passed",
+    "people": 8,
+    "jobs": 12,
+    "fieldClaims": 97,
+    "consoleErrors": [],
+    "externalRequests": 0,
+    "testedURL": "https://mmo-mapping-workbench.jasmineyao25.chatgpt.site"
+  },
+  {
+    "mode": "offline",
+    "version": "3.0.0",
+    "coreFlowRuns": 2,
+    "status": "passed",
+    "people": 8,
+    "jobs": 12,
+    "fieldClaims": 97,
+    "consoleErrors": [],
+    "externalRequests": 0,
+    "testedURL": "file://MMO_Mapping_V3.0.0_独立演示.html"
+  },
+  {
+    "mode": "offline-no-storage",
+    "version": "3.0.0",
+    "coreFlowRuns": 2,
+    "status": "passed",
+    "people": 8,
+    "jobs": 12,
+    "fieldClaims": 97,
+    "consoleErrors": [],
+    "externalRequests": 0,
+    "testedURL": "file://MMO_Mapping_V3.0.0_独立演示.html"
+  }
+]

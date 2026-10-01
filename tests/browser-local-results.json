@@ -1,0 +1,35 @@
+[
+  {
+    "mode": "online",
+    "version": "3.0.0",
+    "coreFlowRuns": 2,
+    "status": "passed",
+    "people": 8,
+    "jobs": 12,
+    "fieldClaims": 97,
+    "consoleErrors": [],
+    "externalRequests": 0
+  },
+  {
+    "mode": "offline",
+    "version": "3.0.0",
+    "coreFlowRuns": 2,
+    "status": "passed",
+    "people": 8,
+    "jobs": 12,
+    "fieldClaims": 97,
+    "consoleErrors": [],
+    "externalRequests": 0
+  },
+  {
+    "mode": "offline-no-storage",
+    "version": "3.0.0",
+    "coreFlowRuns": 2,
+    "status": "passed",
+    "people": 8,
+    "jobs": 12,
+    "fieldClaims": 97,
+    "consoleErrors": [],
+    "externalRequests": 0
+  }
+]

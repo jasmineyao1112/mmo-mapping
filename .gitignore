@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+*.zip
+*.tar.gz
+# 历史版本独立 HTML（由 build.py 生成；线上入口为 index.html）
+MMO_Mapping*.html
+# 部署平台私有配置
+.openai/
+# 浏览器回归测试生成的整页截图（体积大，可本地重新生成）
+screenshots-v3/
+screenshots-v32/
